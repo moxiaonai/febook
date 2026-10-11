@@ -40,10 +40,6 @@ export default defineConfig({
       tags: [
         {
           tag: 'script',
-          children: "(() => { const p = window.location.pathname; if (p === '/' || p === '/index.html') window.location.replace('/blog/'); })();",
-        },
-        {
-          tag: 'script',
           children: `(() => {
   const root = document.documentElement;
   const maxDistance = 120;
