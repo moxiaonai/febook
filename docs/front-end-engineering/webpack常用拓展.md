@@ -18,7 +18,7 @@ module.exports = {
 
 html-webpack-plugin
 
-解决的问题：用打包后的js文件时，需要自行创建html文件，引入。但是当js文件变化，再次打包，生成的压缩文件名字变化了，并且用了clean-webpack-plugin插件，清楚了dist目录，把我写的html也删除了。
+解决的问题：用打包后的js文件时，需要自行创建html文件，引入。但是当js文件变化，再次打包，生成的压缩文件名字变化了，并且用了clean-webpack-plugin插件，清楚了dist目录，把手动维护的 html 也删除了。
 配置：
 
 1. 自己定义模版，让他按照模版生成页面
@@ -228,8 +228,7 @@ new webpack.BannerPlugin({
   hash:[hash]
   chunkhash:[chunkhash]
   name:[name]
-  author:sunny-117
-  corporation:sunny
+  author:Kevin Woo
   `
 })
 ```

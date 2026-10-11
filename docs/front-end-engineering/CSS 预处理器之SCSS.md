@@ -2532,4 +2532,4 @@ sass/
 - 持续的与现代 Web 技术的集成
 - 新功能的改进
 
-> 本文所有源码均在 https://github.com/Sunny-117/blog/tree/main/code/sass-demo
+> 示例源码可按本文代码片段自行整理到项目中。

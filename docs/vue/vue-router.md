@@ -2,7 +2,7 @@
 
 ## 源码实现
 
-先看我写的 [mini-router](https://github.com/Sunny-117/mini-anything)，后续会补充文章
+路由源码学习可结合简化实现或官方文档理解，后续可以补充对应示例。
 
 ## **Vue 的路由实现原理**
 

@@ -262,7 +262,7 @@ autorun(() => {
 });
 
 state.age = 19;
-state.name = "sunny-117";
+state.name = "Kevin Woo";
 // state.addr.province = "四川";
 // state.addr.city = "成都";
 

@@ -7,11 +7,11 @@ const nav = defaultSidebar.slice(1, 10);
 export default defineConfig({
   root: 'docs',
   base: '/blog/',
-  title: 'Sunny-117',
+  title: 'Kevin Woo剑指Offer',
   description: '深入前端技术栈，探索工程化实践，记录成长历程',
   icon: '/favicon.svg',
   logo: '/logo.svg',
-  logoText: 'Sunny-117',
+  logoText: '剑指Offer',
   globalStyles: path.join(__dirname, 'styles/index.css'),
   markdown: {
     showLineNumbers: true,
@@ -25,18 +25,14 @@ export default defineConfig({
       {
         icon: 'github',
         mode: 'link',
-        content: 'https://github.com/Sunny-117/blog',
+        content: 'https://github.com/moxiaonai',
       },
     ],
     outlineTitle: '目录',
     lastUpdated: true,
     lastUpdatedText: 'Last Updated',
     footer: {
-      message: 'Copyright © 2022-present sunny-117',
-    },
-    editLink: {
-      docRepoBaseUrl: 'https://github.com/Sunny-117/blog/tree/main/docs',
-      text: 'Edit this page on Gitlab',
+      message: 'Copyright © 2026 Kevin Woo',
     },
   },
   builderConfig: {
@@ -78,7 +74,7 @@ export default defineConfig({
 })();`,
         },
         { tag: 'meta', attrs: { name: 'theme-color', content: '#3b82f6' } },
-        { tag: 'meta', attrs: { property: 'og:title', content: "Woo 剑指Offer - 前端历险记" } },
+        { tag: 'meta', attrs: { property: 'og:title', content: "Kevin Woo剑指Offer - 前端历险记" } },
         { tag: 'meta', attrs: { property: 'og:description', content: '深入前端技术栈，探索工程化实践' } },
       ],
     },

@@ -200,7 +200,7 @@ async function fn() {
 
 ## babel 插件开发
 
-作者曾在[《「历时 8 个月」10 万字前端知识体系总结（工程化篇）🔥》](https://juejin.cn/post/7146976516692410376#heading-34)中聊过如何开发一个 babel 插件
+参考资料：[《「历时 8 个月」10 万字前端知识体系总结（工程化篇）🔥》](https://juejin.cn/post/7146976516692410376#heading-34)
 
 这里简单回顾一下
 
@@ -655,4 +655,4 @@ module.exports = {
 };
 ```
 
-[本文章作者的 github 仓库](https://github.com/xy-sea/babel-plugin-await-add-trycatch)
+参考资料：[babel-plugin-await-add-trycatch](https://github.com/xy-sea/babel-plugin-await-add-trycatch)
