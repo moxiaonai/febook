@@ -2,7 +2,7 @@
 
 ## 属性描述符
 
-[详解](https://sunny-117.github.io/blog/js/%E4%BB%A3%E7%90%86%E4%B8%8E%E5%8F%8D%E5%B0%84.html)
+可结合属性描述符与代理 / 反射相关内容理解。
 
 ## const 实现原理
 

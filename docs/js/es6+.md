@@ -3087,7 +3087,7 @@ console.log(Object.prototype.toString.apply(arr))
 
 
 # 8. 异步处理
-[https://sunny-117.github.io/blog/js/%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86.html](https://sunny-117.github.io/blog/js/%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86.html)
+> 本节整理异步处理相关知识点。
 
 
 
@@ -3387,7 +3387,7 @@ async function getJSON(resp) {
 
 
 # 10.迭代器和生成器
-[https://sunny-117.github.io/blog/js/%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E7%94%9F%E6%88%90%E5%99%A8.html](https://sunny-117.github.io/blog/js/%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E7%94%9F%E6%88%90%E5%99%A8.html)
+> 本节整理迭代器和生成器相关知识点。
 
 # 11.更多的集合类型
 ## 11-1. set集合
@@ -3686,7 +3686,7 @@ console.log(set)
 3. 不能遍历（不是可迭代的对象）、没有size属性、没有forEach方法
 
 # 12. 代理与反射
-[https://sunny-117.github.io/blog/](https://sunny-117.github.io/blog/)
+> 本节整理代理与反射相关知识点。
 
 # 13. 增强的数组功能
 ## 13-1. 新增的数组API

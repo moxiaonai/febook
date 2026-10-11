@@ -1,19 +1,19 @@
 ---
 pageType: home
 hero:
-  name: Woo 剑指Offer
+  name: Kevin Woo剑指Offer
   text: 前端历险记
   tagline: 深入前端技术栈，探索工程化实践，记录成长历程
   image:
     src: /logo.svg
-    alt: 前端历险记
+    alt: 剑指Offer
   actions:
     - theme: brand
       text: 快速开始 →
       link: /getting-started
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/Sunny-117/blog
+      text: GitHub 仓库
+      link: https://github.com/moxiaonai/febook
 
 features:
   - icon: 🎯
@@ -35,8 +35,8 @@ features:
     title: 实用代码片段
     details: 收录前端开发中的实用技巧、设计模式、性能优化方案、工具函数等，开箱即用
   - icon: 🚀
-    title: 开源项目实践
-    details: 30+ 开源项目经验分享，包括组件库、构建工具、编译器、Hooks 库等多个领域
+    title: 项目实践沉淀
+    details: 后续会持续整理个人项目、源码阅读、工程化实践和面试专题复盘
   - icon: 📚
     title: 持续更新
     details: 紧跟前端技术发展趋势，定期更新最新技术文章和实践经验，与你一起成长

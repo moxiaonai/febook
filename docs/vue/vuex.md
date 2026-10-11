@@ -2,9 +2,7 @@
 
 ## 源码实现
 
-先看我写的 [mini-vuex](https://github.com/Sunny-117/mini-anything)，后续会补充文章
-
-可以结合 [mini-pinia](https://sunny-117.github.io/mini-anything-docs/vue-ecology/index.html) 一起食用
+状态管理源码学习可结合 Vuex / Pinia 的核心流程理解，后续可以补充对应示例。
 
 ## Vuex 的原理
 

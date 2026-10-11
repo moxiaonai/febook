@@ -75,7 +75,7 @@ transform 阶段有@babel/traverse，可以遍历 AST，并调用 visitor 函数
 ```js
 export default () => {
   return {
-    name: "@sunny-117/babel-plugin-console",
+    name: "babel-plugin-console",
     visitor,
   };
 };
@@ -425,7 +425,7 @@ const visitor = {
 
 export default () => {
   return {
-    name: "@sunny-117/babel-plugin-console",
+    name: "babel-plugin-console",
     visitor,
   };
 };

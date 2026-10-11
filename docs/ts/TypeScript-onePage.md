@@ -8,7 +8,7 @@
 ```javascript
 function getUserName() {
   if (Math.random() < 0.5) {
-    return "sunny-117";
+    return "Kevin Woo";
   }
   return 404;
 }

@@ -225,6 +225,11 @@ a {
   white-space: nowrap;
 }
 
+@media (min-width: 960px) {
+  .rspress-sidebar [class*="navTitleMask"] {
+    visibility: hidden;
+  }
+}
 
 .rspress-nav {
   background: rgba(255, 255, 255, var(--rspress-nav-bg-alpha)) !important;
@@ -349,16 +354,16 @@ a {
   color: rgba(226, 232, 240, 0.72) !important;
 }
 
-.dark .rspress-home-hero a[href="https://github.com/Sunny-117/blog"],
-.dark a[href="https://github.com/Sunny-117/blog"][class*="button"] {
+.dark .rspress-home-hero a[href="https://github.com/moxiaonai/febook"],
+.dark a[href="https://github.com/moxiaonai/febook"][class*="button"] {
   color: #e5eefc !important;
   background: rgba(15, 23, 42, 0.82) !important;
   border-color: rgba(148, 163, 184, 0.34) !important;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.26);
 }
 
-.dark .rspress-home-hero a[href="https://github.com/Sunny-117/blog"]:hover,
-.dark a[href="https://github.com/Sunny-117/blog"][class*="button"]:hover {
+.dark .rspress-home-hero a[href="https://github.com/moxiaonai/febook"]:hover,
+.dark a[href="https://github.com/moxiaonai/febook"][class*="button"]:hover {
   color: #fff !important;
   background: rgba(30, 41, 59, 0.96) !important;
   border-color: rgba(147, 197, 253, 0.52) !important;
@@ -784,8 +789,8 @@ a {
 }
 
 /* Home hero secondary action spacing */
-a[href="https://github.com/Sunny-117/blog"].button_e8e0d,
-.rspress-home-hero a[href="https://github.com/Sunny-117/blog"],
-a[href="https://github.com/Sunny-117/blog"][class*="button"] {
+a[href="https://github.com/moxiaonai/febook"].button_e8e0d,
+.rspress-home-hero a[href="https://github.com/moxiaonai/febook"],
+a[href="https://github.com/moxiaonai/febook"][class*="button"] {
   padding: 12px 24px !important;
 }
