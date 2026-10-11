@@ -116,12 +116,12 @@ pnpm preview
 项目的 Rspress 配置使用：
 
 ```ts
-base: '/blog/'
+base: '/'
 ```
 
-因此部署后站点会以 `/blog/` 作为访问前缀。构建产物输出到 `doc_build/`，可部署到 GitHub Pages、静态服务器或其他静态托管平台。
+因此部署到 `fe.fenewbee.com` 后可以直接从域名根路径访问。构建产物输出到 `doc_build/`，可部署到 Cloudflare Pages、GitHub Pages、静态服务器或其他静态托管平台。
 
-如果后续要部署到 GitHub Pages，可以根据目标访问路径调整 `rspress.config.ts` 中的 `base` 配置。
+如果后续要部署到子路径，可以根据目标访问路径调整 `rspress.config.ts` 中的 `base` 配置。
 
 ## 个性化配置
 

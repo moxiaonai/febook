@@ -6,7 +6,7 @@ const nav = defaultSidebar.slice(1, 10);
 
 export default defineConfig({
   root: 'docs',
-  base: '/blog/',
+  base: '/',
   title: 'Kevin Woo剑指Offer',
   description: '深入前端技术栈，探索工程化实践，记录成长历程',
   icon: '/favicon.svg',
