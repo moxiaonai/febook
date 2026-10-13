@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "id": "/",
+  "name": "Kevin Woo剑指Offer",
+  "short_name": "剑指Offer",
+  "description": "深入前端技术栈，探索工程化实践，记录成长历程",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "categories": [
+    "education",
+    "books",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "128x128",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "开始阅读",
+      "short_name": "阅读",
+      "description": "打开文档首页",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/pwa-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+febook",
+      "url": "/protocol-handler.html?url=%s"
+    }
+  ]
+}
