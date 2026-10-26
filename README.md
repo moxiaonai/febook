@@ -119,7 +119,9 @@ pnpm preview
 base: '/'
 ```
 
-因此部署到 `fe.fenewbee.com` 后可以直接从域名根路径访问。构建产物输出到 `doc_build/`，可部署到 Cloudflare Pages、GitHub Pages、静态服务器或其他静态托管平台。
+因此部署到 `fe.fenewbee.com` 后可以直接从域名根路径访问。构建产物输出到 `doc_build/`，当前通过 GitHub Actions 同步到宝塔静态站点目录，也可以部署到其他静态托管平台。
+
+宝塔迁移和自动部署配置见 [deploy/bt/README.md](./deploy/bt/README.md)。
 
 如果后续要部署到子路径，可以根据目标访问路径调整 `rspress.config.ts` 中的 `base` 配置。
 

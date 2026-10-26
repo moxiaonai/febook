@@ -1,0 +1,51 @@
+name: Deploy to Baota server
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-bt
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      BT_HOST: ${{ secrets.BT_HOST }}
+      BT_PORT: ${{ secrets.BT_PORT || '22' }}
+      BT_USER: ${{ secrets.BT_USER || 'root' }}
+      BT_TARGET_DIR: ${{ secrets.BT_TARGET_DIR }}
+      BT_SSH_KEY_FILE: /home/runner/.ssh/bt_deploy_key
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Enable pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@10.14.0 --activate
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Prepare SSH key
+        env:
+          BT_SSH_KEY: ${{ secrets.BT_SSH_KEY }}
+        run: |
+          test -n "$BT_HOST"
+          test -n "$BT_TARGET_DIR"
+          test -n "$BT_SSH_KEY"
+          mkdir -p ~/.ssh
+          printf '%s' "$BT_SSH_KEY" > "$BT_SSH_KEY_FILE"
+          chmod 600 "$BT_SSH_KEY_FILE"
+
+      - name: Build and deploy
+        run: bash scripts/deploy-bt.sh
