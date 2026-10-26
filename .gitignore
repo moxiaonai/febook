@@ -3,3 +3,4 @@ doc_build
 .rspress-cache
 dist
 .DS_Store
+.deploy-keys/
