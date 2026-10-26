@@ -44,8 +44,13 @@ jobs:
           test -n "$BT_TARGET_DIR"
           test -n "$BT_SSH_KEY"
           mkdir -p ~/.ssh
-          printf '%s' "$BT_SSH_KEY" > "$BT_SSH_KEY_FILE"
+          if printf '%s' "$BT_SSH_KEY" | grep -q 'BEGIN OPENSSH PRIVATE KEY'; then
+            printf '%s' "$BT_SSH_KEY" > "$BT_SSH_KEY_FILE"
+          else
+            printf '%s' "$BT_SSH_KEY" | base64 -d > "$BT_SSH_KEY_FILE"
+          fi
           chmod 600 "$BT_SSH_KEY_FILE"
+          ssh-keygen -y -f "$BT_SSH_KEY_FILE" >/dev/null
 
       - name: Build and deploy
         run: bash scripts/deploy-bt.sh
