@@ -61,7 +61,7 @@ remote="${BT_USER}@${BT_HOST}"
 remote_target="$(quote_remote_path "$BT_TARGET_DIR")"
 
 if [[ "${BT_DRY_RUN:-0}" == "1" ]]; then
-  rsync -azn --delete --itemize-changes \
+  rsync -azn --delete --checksum --itemize-changes \
     --exclude=".user.ini" \
     --exclude=".well-known/" \
     -e "$rsync_rsh" \
@@ -71,7 +71,7 @@ fi
 
 ssh "${ssh_args[@]}" "$remote" "mkdir -p -- ${remote_target}"
 
-rsync -az --delete --itemize-changes \
+rsync -az --delete --checksum --itemize-changes \
   --exclude=".user.ini" \
   --exclude=".well-known/" \
   -e "$rsync_rsh" \
